@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+</head>
+
+<body>
+    <a class="btn byn-primary" href="http://127.0.0.1:5500/new.html">Home</a>
+    <div class="" style="outline: 1px solid orange;">
+        <h2>Differnce between Var,Let and Const </h2>
+        <ul>
+            <li>var is function-scoped while let and const are block-scoped.</li>
+            <li>var variables can be reassigned while let and const variables can not.</li>
+            <li>var variables are declared using the var keyword while let and const variables are declared using the
+                let and const keywords respectively.
+            </li>
+            <li>const variables are immutable while let and var variables are not.
+            </li>
+        </ul>
+    </div>
+    <div style="outline: 1px solid rgb(221, 171, 78);">
+        <h2>Differnce between arrow function and regular function</h2>
+        <ul>
+            <li>
+                Syntax:
+                A programmer can get the same result as regular functions by writing a few lines of code using arrow
+                functions.
+            </li>
+            <li>Arguments binding:
+                object inside the regular functions contains the list of arguments.</li>
+            <li>Use of this keyword:
+                Inside of a regular JavaScript function, this value is dynamic. The dynamic context means that the value
+                of this depends on how the function is invoked.
+                The behavior of this inside of an arrow, function differs considerably from the regular function’s this
+                behavior as an arrow function does not have its own “this” keyword.</li>
+            <li>Using a new keyword:
+                Regular functions are constructible and callable. They can be called using the new keyword.
+                But, the arrow functions are only callable and not constructible, i.e., arrow functions can never be
+                used as constructor functions.</li>
+        </ul>
+    </div>
+    <div style="outline: 1px solid rgb(133, 107, 58);">
+        <h2>Differnce between forEach(), map(), filter(), find()</h2>
+        <ul>
+            <h3>Definition</h3>
+
+            <li>Function .forEach() is another form of just a plain for loop that can be used to iterate through array
+                items. This case of a function is used for more complex arrays, for example, an array of objects with a
+                lot of entries than just an array of integers.</li>
+            <li>Function .map() is a manipulative function that can modify each element’s content in an array that it is
+                called on. This function returns a new array with modified values, the array that it is called on will
+                stay still.</li>
+
+            <li>Function .filter() is a search function that returns all the elements that fulfil the assigned
+                condition. You can search by simple terms, for example, that element is equal to a certain integer, or
+                by more advanced terms, for example, searching for an object with certain property that is equal to
+                something.</li>
+
+            <li>Function .find() is also a search function like the previous but they differ in one small detail — this
+                function returns only one match in an array. If in an array is more than one result, the function will
+                return the first that has matched.</li>
+            </li>
+            <h4>Use:</h4>
+
+            <li>.forEach() is great you need to execute a function for each individual element in an array.</li>
+
+            <li>.map() when you want to transform elements in an array.</li>
+
+            <li>.filter() when you want to select a subset of multiple elements from an array.</li>
+
+            <li>.find() When you want to select a single element from an array.</li>
+
+
+        </ul>
+    </div>
+</body>
+
+</html>

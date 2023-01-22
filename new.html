@@ -1,0 +1,126 @@
+<!-- assignment Api link : https://github.com/ProgrammingHero1/news-portal -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current News</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="color">
+    <header class="mb-0 container">
+        <section>
+            <div>
+                <nav class="navbar color">
+                    <div class="container-fluid">
+                        <div>
+                            <a class="navbar-brand text-primary"><span id="Nname-color" class="btn btn-primary">North
+                                    News
+                                </span></a>
+                            <a class="navbar-brand">Portal</a>
+                        </div>
+                        <div class="d-flex" role="search">
+                            <a id="under-line" href="#" class="navbar-brand link-primary">News</a>
+                            <a href="http://127.0.0.1:5500/blog.html" class="navbar-brand btn">blog</a>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- news category part -->
+            <div>
+                <nav class="navbar navbar-expand-lg bg-light rounded">
+                    <div class="container-fluid">
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div id="categories" class="d-flex justify-content-around pe-7 text-align-center">
+
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+    </header>
+    <!-----------------------------------------
+         Main Section of News site 
+        ----------------------------------------->
+    <main class="container">
+        <!-- spinner display -->
+        <section id="spin-loader" class="d-none ">
+            <div class="d-flex border justify-content-center">
+                <div class="text-success spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </section>
+        <div>
+            <p id="error"></p>
+        </div>
+        <section>
+            <div class="" id="news-found">
+
+            </div>
+        </section>
+        <!---------------------------------------------- 
+                        news details show
+         ------------------------------------------------>
+        <section class="rounded" id="news-details-show">
+
+        </section>
+        <!---------------------------------------------- 
+                        news details in a modal show
+         ------------------------------------------------>
+        <section id="news-details-modal">
+            <!-- Button trigger modal -->
+            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Launch demo modal
+            </button> -->
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="newsDatailsModal"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title d-block" id="newsDatailsModal">News title</h5>
+
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div id="news-details-modal" class="modal-body">
+                            <p id="news-details-text"></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer" class="bg-light d-flex justify-content-center align-items-center d-none" style="height: 100px;">
+        <h5>North News Portal Copyright</h5>
+    </footer>
+    <script src="js/new.js"></script>
+    <!-- bootstrap src -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

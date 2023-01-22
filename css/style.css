@@ -1,0 +1,43 @@
+.color {
+    background-color: rgb(223, 211, 211);
+}
+
+#under-line {
+    border-bottom: 2px solid blue;
+    padding-bottom: 5px;
+}
+
+#cover-image {
+    object-fit: cover;
+    height: 100%;
+}
+
+.cut-details {
+    /* width: 100%; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+}
+
+.checked {
+    color: yellow;
+}
+
+/* responsive  */
+@media screen and (max-width: 480px) {
+    body {
+        background-color: rgb(184, 100, 40);
+        color: rgb(45, 161, 103);
+        display: block;
+        font-size: 62.5%;
+
+    }
+
+    h5 {
+        font-size: 100%;
+        color: brown;
+    }
+}
